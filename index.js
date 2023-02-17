@@ -17,18 +17,17 @@ const Directors = Models.Director;
 //New 2.10 code
 const { check, validationResult } = require("express-validator");
 //test
-mongoose.connect(
-  "mongodb+srv://lisagenner:lisa123@cluster0.fxsug1h.mongodb.net/lisadb",
+// mongoose.connect(
+//   "mongodb+srv://lisagenner:lisa123@cluster0.fxsug1h.mongodb.net/lisadb",
 
-  {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
+//   {
+//     useNewUrlParser: true,
+//     useUnifiedTopology: true,
 
-    // mongoose.connect(process.env.CONNECTION_URI, {
-    //   useNewUrlParser: true,
-    //   useUnifiedTopology: true,
-  }
-);
+mongoose.connect(process.env.CONNECTION_URI, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+});
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true })); //bodyParser middleware function
