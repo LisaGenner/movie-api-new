@@ -1,224 +1,235 @@
-[{
-  "_id": {
-    "$oid": "63d00c368356c90ea919014f"
+[
+  {
+    "_id": {
+      "$oid": "63d00c368356c90ea919014f"
+    },
+    "Title": "Silence of the Lambs",
+    "Description": "A young FBI cadet must receive the help of an incarcerated and manipulative cannibal killer to help catch another serial killer.",
+    "Genre": {
+      "Name": "Thriller",
+      "Description": "Thriller film, also known as suspense film or suspense thriller, is a broad film genre that involves excitement and suspense in the audience."
+    },
+    "Director": {
+      "Name": "Jonathan Demme",
+      "Bio": "Robert Jonathan Demme was an American director, producer, and screenwriter.",
+      "Birth": "1944",
+      "Death": "2017"
+    },
+    "ImagePath": "silenceofthelambs.png",
+    "Featured": true
   },
-  "Title": "Silence of the Lambs",
-  "Description": "A young FBI cadet must receive the help of an incarcerated and manipulative cannibal killer to help catch another serial killer.",
-  "Genre": {
-    "Name": "Thriller",
-    "Description": "Thriller film, also known as suspense film or suspense thriller, is a broad film genre that involves excitement and suspense in the audience."
+  {
+    "_id": {
+      "$oid": "63d03701d3a60ef2692e9a6a"
+    },
+    "Title": "Beverly Hills Cop II",
+    "Description": "Axel Foley returns to Beverly Hills to help Taggart and Rosewood investigate Chief Bogomil''s near-fatal shooting and the series of alphabet crimes associated with it.",
+    "Genre": {
+      "Name": "Comedy",
+      "Description": "456Comedy is a genre of film in which the main emphasis is on humor. These films are designed to make the audience laugh through amusement and most often work by exaggerating characteristics for humorous effect."
+    },
+    "Director": {
+      "Name": "Tony Scott",
+      "Bio": "Tony Scott was a British-born film director and producer.",
+      "Birth": "1944",
+      "Death": "2012"
+    },
+    "ImagePath": "BHCII.png",
+    "Actors": [
+      "Eddie Murphy"
+    ],
+    "Featured": true,
+    "Bio": "Tony Scott was a British-born film director and producer. He was the youngest of three brothers, one of whom is fellow film director Ridley Scott. He was born in North Shields, Northumberland, England to parents Jean and Colonel Francis Percy Scott. As a result of his father's career in the British military, his family moved around a lot. Their mother loved the going to the movies and instilled a love of cinema in her children. At age 16, Tony made his first appearance on screen as the boy in his brother's directorial debut, the short film Boy and Bicycle (1965). In 1969, Tony directed his own short film One of the Missing (1969) about a soldier in the American civil war."
   },
-  "Director": {
-    "Name": "Jonathan Demme",
-    "Bio": "Robert Jonathan Demme was an American director, producer, and screenwriter.",
-    "Birth": "1944",
-    "Death": "2017"
+  {
+    "_id": {
+      "$oid": "63d038bfd3a60ef2692e9a6b"
+    },
+    "Title": "Three Amigos",
+    "Description": "Three actors accept an invitation to a Mexican village to perform their onscreen bandit fighter roles, unaware that it is the real thing.",
+    "Genre": {
+      "Name": "Comedy",
+      "Description": "456Comedy is a genre of film in which the main emphasis is on humor. These films are designed to make the audience laugh through amusement and most often work by exaggerating characteristics for humorous effect."
+    },
+    "Director": {
+      "Name": "John Landis",
+      "Bio": "John Landis began his career in the mail room of 20th Century-Fox. A high-school dropout, 18-year-old Landis made his way to Yugoslavia to work as a production assistant, actor, extra and stuntman, finally to US to be a writer/director.",
+      "Birth": "1944",
+      "Death": "2017"
+    },
+    "ImagePath": "threeamigos.png",
+    "Actors": [
+      "Steve Martin",
+      "Chevy Chase",
+      "Martin Short"
+    ],
+    "Featured": true
   },
-  "ImagePath": "silenceofthelambs.png",
-  "Featured": true
-},{
-  "_id": {
-    "$oid": "63d03701d3a60ef2692e9a6a"
+  {
+    "_id": {
+      "$oid": "63d039d4d3a60ef2692e9a6c"
+    },
+    "Title": "Sweet Home Alabama",
+    "Description": "A young woman who has reinvented herself as a New York City socialite must return home to Alabama to obtain a divorce from her husband after seven years of separation.",
+    "Genre": {
+      "Name": "Romance Comedy",
+      "Description": "Romantic comedy (also known as romcom or rom-com) is a subgenre of comedy and slice of life fiction, focusing on lighthearted, humorous plot lines centered on romantic ideas, such as how true love is able to surmount most obstacles.[1] In a typical romantic comedy, the two lovers tend to be young, likeable, and seemingly meant for each other, yet they are kept apart by some complicating circumstance (e.g., class differences, parental interference, a previous girlfriend or boyfriend) until, surmounting all obstacles, they are finally united. A fairy-tale-style happy ending is a typical feature."
+    },
+    "Director": {
+      "Name": "Andy Tennant",
+      "Bio": "Andy Tennant was born on June 15, 1955 in Chicago, Illinois, USA. He is a producer and director, known for Fool''s Gold (2008), Hitch (2005) and Sweet Home Alabama (2002). He has been married to Sharon Johnson since February 13, 1993. They have four children.",
+      "Birth": "1950",
+      "Death": "na"
+    },
+    "ImagePath": "sweethomealabama.png",
+    "Actors": [
+      "Reese Witherspoon",
+      "Patrick Dempsey",
+      "Josh Lucas"
+    ],
+    "Featured": true
   },
-  "Title": "Beverly Hills Cop II",
-  "Description": "Axel Foley returns to Beverly Hills to help Taggart and Rosewood investigate Chief Bogomil''s near-fatal shooting and the series of alphabet crimes associated with it.",
-  "Genre": {
-    "Name": "Comedy",
-    "Description": "Comedy is a genre of film in which the main emphasis is on humor. These films are designed to make the audience laugh through amusement and most often work by exaggerating characteristics for humorous effect."
+  {
+    "_id": {
+      "$oid": "63d16bf0919fdc8ccff0998c"
+    },
+    "Title": "True Romance",
+    "Description": "In Detroit,Michigan a lonely pop culture geek marries a call girl, steals cocaine from her pimp, and tries to sell it in Hollywood. Meanwhile, the owners of the cocaine, the Mob, track them down in an attempt to reclaim it.",
+    "Genre": {
+      "Name": "Drama",
+      "Description": "Drama film is a genre that relies on the emotional and relational development of realistic characters. While Drama film relies heavily on this kind of development, dramatic themes play a large role in the plot as well. Often, these dramatic themes are taken from intense, real life issues."
+    },
+    "Director": {
+      "Name": "Tony Scott",
+      "Bio": "Tony Scott was a British-born film director and producer.",
+      "Birth": "1944",
+      "Death": "2012"
+    },
+    "ImagePath": "trueromance.png",
+    "Actors": [
+      "Christian Slater",
+      "Patricia Arquette",
+      "Dennis Hopper"
+    ],
+    "Featured": true,
+    "Bio": "Tony Scott was a British-born film director and producer. He was the youngest of three brothers, one of whom is fellow film director Ridley Scott. He was born in North Shields, Northumberland, England to parents Jean and Colonel Francis Percy Scott. As a result of his father's career in the British military, his family moved around a lot. Their mother loved the going to the movies and instilled a love of cinema in her children. At age 16, Tony made his first appearance on screen as the boy in his brother's directorial debut, the short film Boy and Bicycle (1965). In 1969, Tony directed his own short film One of the Missing (1969) about a soldier in the American civil war."
   },
-  "Director": {
-    "Name": "Tony Scott",
-    "Bio": "Tony Scott was a British-born film director and producer.",
-    "Birth": "1944",
-    "Death": "2012"
+  {
+    "_id": {
+      "$oid": "63dd169b67c5eb757111fce1"
+    },
+    "Title": "Top Gun",
+    "Description": "As students at the United States Navy''s elite fighter weapons school compete to be best in the class, one daring young pilot learns a few things from a civilian instructor that are not taught in the classroom.",
+    "Genre": {
+      "Name": "Drama",
+      "Description": "Drama film is a genre that relies on the emotional and relational development of realistic characters. While Drama film relies heavily on this kind of development, dramatic themes play a large role in the plot as well. Often, these dramatic themes are taken from intense, real life issues."
+    },
+    "Director": {
+      "Name": "Tony Scott",
+      "Bio": "Tony Scott was a British-born film director and producer.",
+      "Birth": "1944",
+      "Death": "2012"
+    },
+    "ImagePath": "topgun.png",
+    "Actors": [
+      "Tom Cruise",
+      "Tim Robbins",
+      "Kelly McGillis"
+    ],
+    "Featured": true
   },
-  "ImagePath": "BHCII.png",
-  "Actors": [
-    "Eddie Murphy"
-  ],
-  "Featured": true,
-  "Bio": "Tony Scott was a British-born film director and producer. He was the youngest of three brothers, one of whom is fellow film director Ridley Scott. He was born in North Shields, Northumberland, England to parents Jean and Colonel Francis Percy Scott. As a result of his father's career in the British military, his family moved around a lot. Their mother loved the going to the movies and instilled a love of cinema in her children. At age 16, Tony made his first appearance on screen as the boy in his brother's directorial debut, the short film Boy and Bicycle (1965). In 1969, Tony directed his own short film One of the Missing (1969) about a soldier in the American civil war."
-},{
-  "_id": {
-    "$oid": "63d038bfd3a60ef2692e9a6b"
+  {
+    "_id": {
+      "$oid": "63dd189f18ac3ef242baa9bf"
+    },
+    "Title": "Clue",
+    "Description": "Six guests are anonymously invited to a strange mansion for dinner, but after their host is killed, they must cooperate with the staff to identify the murderer as the bodies pile up.",
+    "Genre": {
+      "Name": "Comedy",
+      "Description": "456Comedy is a genre of film in which the main emphasis is on humor. These films are designed to make the audience laugh through amusement and most often work by exaggerating characteristics for humorous effect."
+    },
+    "Director": {
+      "Name": "Jonathan Lynn",
+      "Bio": "Jonathan Lynn was an American actor, director, and screenwriter.",
+      "Birth": "1943",
+      "Death": "na"
+    },
+    "ImagePath": "clue.png",
+    "Actors": [
+      "Tim Curry",
+      "Eileen Brennan"
+    ],
+    "Featured": true
   },
-  "Title": "Three Amigos",
-  "Description": "Three actors accept an invitation to a Mexican village to perform their onscreen bandit fighter roles, unaware that it is the real thing.",
-  "Genre": {
-    "Name": "Comedy",
-    "Description": "Comedy is a genre of film in which the main emphasis is on humor. These films are designed to make the audience laugh through amusement and most often work by exaggerating characteristics for humorous effect."
+  {
+    "_id": {
+      "$oid": "63dd18e218ac3ef242baa9c0"
+    },
+    "Title": "Footloose",
+    "Description": "A city teenager moves to a small town where rock music and dancing have been banned, and his rebellious spirit shakes up the populace.",
+    "Genre": {
+      "Name": "Drama",
+      "Description": "Drama film is a genre that relies on the emotional and relational development of realistic characters. While Drama film relies heavily on this kind of development, dramatic themes play a large role in the plot as well. Often, these dramatic themes are taken from intense, real life issues."
+    },
+    "Director": {
+      "Name": "Herbert Ross",
+      "Bio": "Herbert Ross was born in Brooklyn, New York City, New York, USA. He was a director and producer.",
+      "Birth": "1927",
+      "Death": "2001"
+    },
+    "ImagePath": "footloose.png",
+    "Actors": [
+      "Kevin Bacon",
+      "Lori Sinner",
+      "John Lithgow"
+    ],
+    "Featured": true
   },
-  "Director": {
-    "Name": "John Landis",
-    "Bio": "John Landis began his career in the mail room of 20th Century-Fox. A high-school dropout, 18-year-old Landis made his way to Yugoslavia to work as a production assistant, actor, extra and stuntman, finally to US to be a writer/director.",
-    "Birth": "1944",
-    "Death": "2017"
+  {
+    "_id": {
+      "$oid": "63dd1a3618ac3ef242baa9c1"
+    },
+    "Title": "Caddyshack",
+    "Description": "An exclusive golf course has to deal with a brash new member and a destructive dancing gopher.",
+    "Genre": {
+      "Name": "Comedy",
+      "Description": "456Comedy is a genre of film in which the main emphasis is on humor. These films are designed to make the audience laugh through amusement and most often work by exaggerating characteristics for humorous effect."
+    },
+    "Director": {
+      "Name": "Harold Ramis",
+      "Bio": "Harold Ramis was born in Chicago, Illinois, he got his start in comedy as Playboy magazines joke editor and reviewer. In 1969, he joined Chicagos Second Citys Improvisational Theatre Troupe before moving to New York to help write and perform in The National Lampoon Show with other Second City graduates including John Belushi, Gilda Radner and Bill Murray.",
+      "Birth": "1944"
+    },
+    "ImagePath": "caddyshack.png",
+    "Actors": [
+      "Chevy Chase",
+      "Bill Murray",
+      "Rodney Dangerfield"
+    ],
+    "Featured": true
   },
-  "ImagePath": "threeamigos.png",
-  "Actors": [
-    "Steve Martin",
-    "Chevy Chase",
-    "Martin Short"
-  ],
-  "Featured": true
-},{
-  "_id": {
-    "$oid": "63d039d4d3a60ef2692e9a6c"
-  },
-  "Title": "Sweet Home Alabama",
-  "Description": "A young woman who has reinvented herself as a New York City socialite must return home to Alabama to obtain a divorce from her husband after seven years of separation.",
-  "Genre": {
-    "Name": "Romance Comedy",
-    "Description": "Romantic comedy (also known as romcom or rom-com) is a subgenre of comedy and slice of life fiction, focusing on lighthearted, humorous plot lines centered on romantic ideas, such as how true love is able to surmount most obstacles.[1] In a typical romantic comedy, the two lovers tend to be young, likeable, and seemingly meant for each other, yet they are kept apart by some complicating circumstance (e.g., class differences, parental interference, a previous girlfriend or boyfriend) until, surmounting all obstacles, they are finally united. A fairy-tale-style happy ending is a typical feature."
-  },
-  "Director": {
-    "Name": "Andy Tennant",
-    "Bio": "Andy Tennant was born on June 15, 1955 in Chicago, Illinois, USA. He is a producer and director, known for Fool''s Gold (2008), Hitch (2005) and Sweet Home Alabama (2002). He has been married to Sharon Johnson since February 13, 1993. They have four children.",
-    "Birth": "1950",
-    "Death": "na"
-  },
-  "ImagePath": "sweethomealabama.png",
-  "Actors": [
-    "Reese Witherspoon",
-    "Patrick Dempsey",
-    "Josh Lucas"
-  ],
-  "Featured": true
-},{
-  "_id": {
-    "$oid": "63d16bf0919fdc8ccff0998c"
-  },
-  "Title": "True Romance",
-  "Description": "In Detroit,Michigan a lonely pop culture geek marries a call girl, steals cocaine from her pimp, and tries to sell it in Hollywood. Meanwhile, the owners of the cocaine, the Mob, track them down in an attempt to reclaim it.",
-  "Genre": {
-    "Name": "Drama",
-    "Description": "Drama film is a genre that relies on the emotional and relational development of realistic characters. While Drama film relies heavily on this kind of development, dramatic themes play a large role in the plot as well. Often, these dramatic themes are taken from intense, real life issues."
-  },
-  "Director": {
-    "Name": "Tony Scott",
-    "Bio": "Tony Scott was a British-born film director and producer.",
-    "Birth": "1944",
-    "Death": "2012"
-  },
-  "ImagePath": "trueromance.png",
-  "Actors": [
-    "Christian Slater",
-    "Patricia Arquette",
-    "Dennis Hopper"
-  ],
-  "Featured": true,
-  "Bio": "Tony Scott was a British-born film director and producer. He was the youngest of three brothers, one of whom is fellow film director Ridley Scott. He was born in North Shields, Northumberland, England to parents Jean and Colonel Francis Percy Scott. As a result of his father's career in the British military, his family moved around a lot. Their mother loved the going to the movies and instilled a love of cinema in her children. At age 16, Tony made his first appearance on screen as the boy in his brother's directorial debut, the short film Boy and Bicycle (1965). In 1969, Tony directed his own short film One of the Missing (1969) about a soldier in the American civil war."
-},{
-  "_id": {
-    "$oid": "63dd169b67c5eb757111fce1"
-  },
-  "Title": "Top Gun",
-  "Description": "As students at the United States Navy''s elite fighter weapons school compete to be best in the class, one daring young pilot learns a few things from a civilian instructor that are not taught in the classroom.",
-  "Genre": {
-    "Name": "Drama",
-    "Description": "Drama film is a genre that relies on the emotional and relational development of realistic characters. While Drama film relies heavily on this kind of development, dramatic themes play a large role in the plot as well. Often, these dramatic themes are taken from intense, real life issues."
-  },
-  "Director": {
-    "Name": "Tony Scott",
-    "Bio": "Tony Scott was a British-born film director and producer.",
-    "Birth": "1944",
-    "Death": "2012"
-  },
-  "ImagePath": "topgun.png",
-  "Actors": [
-    "Tom Cruise",
-    "Tim Robbins",
-    "Kelly McGillis"
-  ],
-  "Featured": true
-},{
-  "_id": {
-    "$oid": "63dd189f18ac3ef242baa9bf"
-  },
-  "Title": "Clue",
-  "Description": "Six guests are anonymously invited to a strange mansion for dinner, but after their host is killed, they must cooperate with the staff to identify the murderer as the bodies pile up.",
-  "Genre": {
-    "Name": "Comedy",
-    "Description": "Comedy is a genre of film in which the main emphasis is on humor. These films are designed to make the audience laugh through amusement and most often work by exaggerating characteristics for humorous effect."
-  },
-  "Director": {
-    "Name": "Jonathan Lynn",
-    "Bio": "Jonathan Lynn was an American actor, director, and screenwriter.",
-    "Birth": "1943",
-    "Death": "na"
-  },
-  "ImagePath": "clue.png",
-  "Actors": [
-    "Tim Curry",
-    "Eileen Brennan"
-  ],
-  "Featured": true
-},{
-  "_id": {
-    "$oid": "63dd18e218ac3ef242baa9c0"
-  },
-  "Title": "Footloose",
-  "Description": "A city teenager moves to a small town where rock music and dancing have been banned, and his rebellious spirit shakes up the populace.",
-  "Genre": {
-    "Name": "Drama",
-    "Description": "Drama film is a genre that relies on the emotional and relational development of realistic characters. While Drama film relies heavily on this kind of development, dramatic themes play a large role in the plot as well. Often, these dramatic themes are taken from intense, real life issues."
-  },
-  "Director": {
-    "Name": "Herbert Ross",
-    "Bio": "Herbert Ross was born in Brooklyn, New York City, New York, USA. He was a director and producer.",
-    "Birth": "1927",
-    "Death": "2001"
-  },
-  "ImagePath": "footloose.png",
-  "Actors": [
-    "Kevin Bacon",
-    "Lori Sinner",
-    "John Lithgow"
-  ],
-  "Featured": true
-},{
-  "_id": {
-    "$oid": "63dd1a3618ac3ef242baa9c1"
-  },
-  "Title": "Caddyshack",
-  "Description": "An exclusive golf course has to deal with a brash new member and a destructive dancing gopher.",
-  "Genre": {
-    "Name": "Comedy",
-    "Description": "Comedy is a genre of film in which the main emphasis is on humor. These films are designed to make the audience laugh through amusement and most often work by exaggerating characteristics for humorous effect."
-  },
-  "Director": {
-    "Name": "Harold Ramis",
-    "Bio": "Harold Ramis was born in Chicago, Illinois, he got his start in comedy as Playboy magazines joke editor and reviewer. In 1969, he joined Chicagos Second Citys Improvisational Theatre Troupe before moving to New York to help write and perform in The National Lampoon Show with other Second City graduates including John Belushi, Gilda Radner and Bill Murray.",
-    "Birth": "1944"
-  },
-  "ImagePath": "caddyshack.png",
-  "Actors": [
-    "Chevy Chase",
-    "Bill Murray",
-    "Rodney Dangerfield"
-  ],
-  "Featured": true
-},{
-  "_id": {
-    "$oid": "63dd1a8b18ac3ef242baa9c2"
-  },
-  "Title": "Back to the Future",
-  "Description": "Marty McFly, a 17-year-old high school student, is accidentally sent 30 years into the past in a time-traveling DeLorean invented by his close friend, the maverick scientist Doc Brown.",
-  "Genre": {
-    "Name": "Comedy",
-    "Description": "Comedy is a genre of film in which the main emphasis is on humor. These films are designed to make the audience laugh through amusement and most often work by exaggerating characteristics for humorous effect."
-  },
-  "Director": {
-    "Name": "Robert Zemeckis",
-    "Bio": "A whiz-kid with special effects, Robert is from the Spielberg camp of film-making (Steven Spielberg produced many of his films). Usually working with writing partner Bob Gale, Robert''s earlier films show he has a talent for zany comedy (Romancing the Stone (1984), 1941 (1979)) and special effect vehicles (Who Framed Roger Rabbit (1988) and Back to the Future (1985)). His later films have become more serious, with the hugely successful Tom Hanks vehicle Forrest Gump (1994) and the Jodie Foster film Contact (1997).",
-    "Birth": "1944",
-    "Death": "2017"
-  },
-  "ImagePath": "backtothefuture.png",
-  "Actors": [
-    "Michael J Fox",
-    "Christopher Lloyd",
-    "Lea Thompson"
-  ],
-  "Featured": true
-}]
+  {
+    "_id": {
+      "$oid": "63dd1a8b18ac3ef242baa9c2"
+    },
+    "Title": "Back to the Future",
+    "Description": "Marty McFly, a 17-year-old high school student, is accidentally sent 30 years into the past in a time-traveling DeLorean invented by his close friend, the maverick scientist Doc Brown.",
+    "Genre": {
+      "Name": "Comedy",
+      "Description": "456Comedy is a genre of film in which the main emphasis is on humor. These films are designed to make the audience laugh through amusement and most often work by exaggerating characteristics for humorous effect."
+    },
+    "Director": {
+      "Name": "Robert Zemeckis",
+      "Bio": "A whiz-kid with special effects, Robert is from the Spielberg camp of film-making (Steven Spielberg produced many of his films). Usually working with writing partner Bob Gale, Robert''s earlier films show he has a talent for zany comedy (Romancing the Stone (1984), 1941 (1979)) and special effect vehicles (Who Framed Roger Rabbit (1988) and Back to the Future (1985)). His later films have become more serious, with the hugely successful Tom Hanks vehicle Forrest Gump (1994) and the Jodie Foster film Contact (1997).",
+      "Birth": "1944",
+      "Death": "2017"
+    },
+    "ImagePath": "backtothefuture.png",
+    "Actors": [
+      "Michael J Fox",
+      "Christopher Lloyd",
+      "Lea Thompson"
+    ],
+    "Featured": true
+  }
+]
