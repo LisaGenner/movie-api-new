@@ -9,20 +9,42 @@ const express = require("express"),
   fs = require("fs"),
   path = require("path");
 
+//testing code to see if it works, if not delete
+require("dotenv").config();
+
+//added to figure out why connection URI is not working, delete if doesnt help!
+// const dotenv = require("dotenv"); //require dotenv package
+// dotenv.config({ path: "./config.env" }); //import config.env file
+
+// const DB = process.env.DATABASE;
+// const Port = process.env.PORT;
+
+// mongoose
+//   .connect(DB, {
+//     usenewurlparser: true,
+//     useunifiedtopology: true,
+//   })
+//   .then(() => {
+//     console.log("Successfully connected ");
+//   })
+//   .catch((error) => {
+//     console.log(`can not connect to database, ${error}`);
+//   });
+//end of test
+
 const Movies = Models.Movie;
 const Users = Models.User;
 const Genres = Models.Genre;
 const Directors = Models.Director;
 
-//New 2.10 code
+//New 2.10 code, middleware to the routes that validate
 const { check, validationResult } = require("express-validator");
-//test
+//connecting to local host
+
 // mongoose.connect(
 //   "mongodb+srv://lisagenner:lisa123@cluster0.fxsug1h.mongodb.net/lisadb",
-
-//   {
-//     useNewUrlParser: true,
-//     useUnifiedTopology: true,
+//   { useNewUrlParser: true, useUnifiedTopology: true }
+// );
 
 mongoose.connect(process.env.CONNECTION_URI, {
   useNewUrlParser: true,
@@ -33,13 +55,29 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true })); //bodyParser middleware function
 // app.use(morgan("combined", { stream: accessLogStream }));
 app.use(morgan("common")), app.use(express.static("public"));
-// app.use(cors()); //allow requests from all origins
+app.use(cors()); //allow requests from all origins
 
 //allow only certain origins to be given access
-let allowedOrigins = [
-  "http://localhost:5500",
-  "https://myflix-20778.herokuapp.com",
-];
+// let allowedOrigins = [
+//   "http://localhost:5500",
+//   "https://myflix-20778.herokuapp.com",
+// ];
+//if only want certain origins to be given access use this code below vs app.use(cors)
+// app.use(
+//   cors({
+//     origin: (origin, callback) => {
+//       if (!origin) return callback(null, true);
+//       if (allowedOrigins.indexOf(origin) === -1) {
+//         // If a specific origin isn’t found on the list of allowed origins
+//         let message =
+//           "The CORS policy for this application doesn’t allow access from origin " +
+//           origin;
+//         return callback(new Error(message), false);
+//       }
+//       return callback(null, true);
+//     },
+//   })
+// );
 
 let myLogger = (req, res, next) => {
   console.log(req.url);
@@ -47,23 +85,6 @@ let myLogger = (req, res, next) => {
 };
 
 app.use(myLogger);
-
-app.use(
-  cors({
-    origin: (origin, callback) => {
-      if (!origin) return callback(null, true);
-      if (allowedOrigins.indexOf(origin) === -1) {
-        // If a specific origin isn’t found on the list of allowed origins
-        let message =
-          "The CORS policy for this application doesn’t allow access from origin " +
-          origin;
-        return callback(new Error(message), false);
-      }
-      return callback(null, true);
-    },
-  })
-);
-
 const accessLogStream = fs.createWriteStream(
   path.join(__dirname, "access.log"),
   {
@@ -100,7 +121,7 @@ app.get(
   "/movies/:Title",
   passport.authenticate("jwt", { session: false }),
   (req, res) => {
-    console.log(req.params.Title);
+    // console.log(req.params.Title);
     Movies.findOne({ Title: req.params.Title })
       .then((movies) => {
         res.json(movies);
@@ -132,6 +153,7 @@ app.get(
   "/movies/director/:Name",
   passport.authenticate("jwt", { session: false }),
   (req, res) => {
+    console.log(req.params.Title);
     Movies.findOne({ "Director.Name": req.params.Name })
       .then((movies) => {
         res.json(movies);
