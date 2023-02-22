@@ -10,7 +10,7 @@ const express = require("express"),
   path = require("path");
 
 //testing code to see if it works, if not delete
-require("dotenv").config();
+// require("dotenv").config();
 
 //added to figure out why connection URI is not working, delete if doesnt help!
 // const dotenv = require("dotenv"); //require dotenv package
@@ -98,7 +98,7 @@ require("./passport");
 
 // GET requests_ok
 app.get("/", (req, res) => {
-  res.send("Welcome to MyFlix movie list");
+  res.send("Welcome to MyFlix Movie App");
 });
 
 //to get movies_works
