@@ -8,6 +8,7 @@ const express = require("express"),
   cors = require("cors"), //New 2.10 code
   fs = require("fs"),
   path = require("path");
+require("dotenv").config();
 
 //testing code to see if it works, if not delete
 // require("dotenv").config();
@@ -40,11 +41,6 @@ const Directors = Models.Director;
 //New 2.10 code, middleware to the routes that validate
 const { check, validationResult } = require("express-validator");
 //connecting to local host
-
-// mongoose.connect(
-//   "mongodb+srv://lisagenner:lisa123@cluster0.fxsug1h.mongodb.net/lisadb",
-//   { useNewUrlParser: true, useUnifiedTopology: true }
-// );
 
 mongoose.connect(process.env.CONNECTION_URI, {
   useNewUrlParser: true,
