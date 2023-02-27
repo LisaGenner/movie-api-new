@@ -1,1 +1,5 @@
 node_modules
+*.txt
+.parcel-cache/be421f5ad77beb1a
+*.mdb
+.parcel-cache/faf76a89a5ae82aa
