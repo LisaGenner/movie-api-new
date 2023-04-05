@@ -53,11 +53,12 @@ app.use(bodyParser.urlencoded({ extended: true })); //bodyParser middleware func
 app.use(morgan("common")), app.use(express.static("public"));
 app.use(cors()); //allow requests from all origins
 
-//allow only certain origins to be given access
-// let allowedOrigins = [
-//   "http://localhost:5500",
-//   "https://myflix-20778.herokuapp.com",
-// ];
+// allow only certain origins to be given access
+let allowedOrigins = [
+  "http://localhost:5500",
+  "https://myflix-20778.herokuapp.com",
+  "https://myflix-20778.netlify.com",
+];
 //if only want certain origins to be given access use this code below vs app.use(cors)
 // app.use(
 //   cors({
