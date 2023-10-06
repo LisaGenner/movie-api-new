@@ -10,28 +10,14 @@ const express = require("express"),
   path = require("path");
 require("dotenv").config();
 
-//testing code to see if it works, if not delete
-// require("dotenv").config();
-
-//added to figure out why connection URI is not working, delete if doesnt help!
-// const dotenv = require("dotenv"); //require dotenv package
-// dotenv.config({ path: "./config.env" }); //import config.env file
-
-// const DB = process.env.DATABASE;
-// const Port = process.env.PORT;
-
-// mongoose
-//   .connect(DB, {
-//     usenewurlparser: true,
-//     useunifiedtopology: true,
-//   })
-//   .then(() => {
-//     console.log("Successfully connected ");
-//   })
-//   .catch((error) => {
-//     console.log(`can not connect to database, ${error}`);
-//   });
-//end of test
+//2.4 cloud update//
+const {
+  S3Client,
+  ListObjectsV2Command,
+  PutObjectCommand,
+} = require("@aws-sdk/client-s3");
+const tempPath = `/tmp/${fileName}`;
+//
 
 const Movies = Models.Movie;
 const Users = Models.User;
@@ -47,6 +33,25 @@ mongoose.connect(process.env.CONNECTION_URI, {
   useUnifiedTopology: true,
 });
 
+//2.4 cloud update//
+const fs = require("fs");
+const fileUpload = require("express-fileupload");
+
+const s3Config = {
+  accessKeyId: process.env.AWS_ACCESS_KEY,
+  secretAccessKey: process.env.AWS_ACCESS_SECRET,
+  region: "us-east-1",
+};
+//
+
+//2.4 cloud update//
+const listObjectsParams = {
+  Bucket: "newbucket2.3",
+};
+
+listObjectsCmd = new ListObjectsV2Command(listObjectsParams);
+//
+
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true })); //bodyParser middleware function
 // app.use(morgan("combined", { stream: accessLogStream }));
@@ -59,22 +64,6 @@ let allowedOrigins = [
   "https://myflix-20778.herokuapp.com",
   "https://myflix-20778.netlify.com",
 ];
-//if only want certain origins to be given access use this code below vs app.use(cors)
-// app.use(
-//   cors({
-//     origin: (origin, callback) => {
-//       if (!origin) return callback(null, true);
-//       if (allowedOrigins.indexOf(origin) === -1) {
-//         // If a specific origin isn’t found on the list of allowed origins
-//         let message =
-//           "The CORS policy for this application doesn’t allow access from origin " +
-//           origin;
-//         return callback(new Error(message), false);
-//       }
-//       return callback(null, true);
-//     },
-//   })
-// );
 
 let myLogger = (req, res, next) => {
   console.log(req.url);
@@ -194,7 +183,20 @@ app.get(
   }
 );
 
-//Add user_new code for 2.10
+//2.4 cloud update//
+app.get("/images", (req, res) => {
+  listObjectsParams = {
+    Bucket: "newbucket2.3",
+  };
+  S3Client.send(new ListObjectsV2Command(listObjectsParams)).then(
+    (listObjectsResponse) => {
+      res.send(listObjectsResponse);
+    }
+  );
+});
+//
+
+//Add user_new code for 2.10//
 app.post(
   "/users",
   // Validation logic here for request
@@ -311,6 +313,22 @@ app.post(
     );
   }
 );
+
+//2.4 cloud update//
+app.post("/images", (req, res) => {
+  const file = req.files.image;
+  const fileName = req.files.image.name;
+  const tempPath = `/tmp/${fileName}`;
+  file.mv(tempPath, (err) => {
+    if (err) {
+      console.error(err);
+      res.status(500).send("Error: " + err);
+    } else {
+      res.json(updateimage);
+    }
+  });
+});
+//
 
 // Delete a user by username_works
 app.delete(
