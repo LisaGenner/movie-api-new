@@ -17,6 +17,8 @@ let movieSchema = mongoose.Schema({
     Featured: Boolean,
   });
   
+  mongoose.set('strictQuery', false);
+
   let userSchema = mongoose.Schema({
     Username: {type: String, required: true},
     Password: {type: String, required: true},
