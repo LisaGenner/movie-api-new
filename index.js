@@ -6,7 +6,6 @@ const express = require("express"),
   mongoose = require("mongoose"),
   Models = require("./models.js"),
   cors = require("cors"), //New 2.10 code
-  fs = require("fs"),
   path = require("path");
 require("dotenv").config();
 
@@ -16,8 +15,6 @@ const {
   ListObjectsV2Command,
   PutObjectCommand,
 } = require("@aws-sdk/client-s3");
-const tempPath = `/tmp/${fileName}`;
-//
 
 const Movies = Models.Movie;
 const Users = Models.User;
@@ -42,7 +39,7 @@ const s3Config = {
   secretAccessKey: process.env.AWS_ACCESS_SECRET,
   region: "us-east-1",
 };
-//
+
 
 //2.4 cloud update//
 const listObjectsParams = {
@@ -50,7 +47,6 @@ const listObjectsParams = {
 };
 
 listObjectsCmd = new ListObjectsV2Command(listObjectsParams);
-//
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true })); //bodyParser middleware function
